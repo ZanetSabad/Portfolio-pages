@@ -1,0 +1,100 @@
+/* ***************************Blogs */
+@media only screen and (max-width: 1100px){
+    .blogs{
+        flex-direction: column;
+        
+    }
+    .blog{
+        margin: 20px 20px;
+        
+    }
+    .article-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* references */
+
+    .references{
+       flex-direction: column;
+       /* width: 100%; */
+
+    }
+}   
+/* **************************Photos-3 */
+@media only screen and (max-width: 1000px) {
+    .photos-3{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+
+    .image1{
+        align-self: center;
+    }
+      
+    .image3{
+        align-self: center;
+    }
+
+    .photos-3 img{
+        width: 300px;
+        height:200px;
+    }
+    /* ************************************Photos-4 */
+    .photos-4 {
+        margin-top: 30px;
+        width: 70%;
+        height: 800px;
+    
+      }
+}
+/* *************************Teams */
+@media only screen and (max-width: 1050px){
+    .team-member{
+        margin: 10px 10px;
+       
+    }
+}
+
+/* Photos-2 */
+@media only screen and (max-width: 850px){
+    .photos-2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ***************************Photos */
+@media only screen and (max-width: 800px){
+    .photos{
+        flex-wrap: wrap;
+    }
+
+    .photos img{
+        flex-basis: 200px;  /*800/4=200(800px / 4 obrázky) */
+        flex-grow: 1;
+    }
+}
+/* *************************************Cotact-3*/
+@media only screen and (max-width: 700px){
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* *******************************Header */
+@media only screen and (max-width: 580px){
+    header h1{
+        font-size: 50px;     
+    
+    }
+
+    header p{
+        font-size: 30px;
+        
+    }
+
+}

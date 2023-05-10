@@ -1,0 +1,276 @@
+/* ´*************************************General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ´*************************************Header*/
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
+        url(../img/main-photo.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+
+header p{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+}
+/* ´*************************************Blogs*/
+
+.blogs{
+    display: flex;
+    flex-direction: row;
+}
+
+.blog{
+    background: rgb(233, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px black;
+    font-size: 20px;
+    margin: 50px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.author-info img{
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.author-info h2{
+    text-align: center;
+    font-size: 23px;
+}
+
+/* ´*************************************Teams */
+.teams{
+    background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
+        url(../img/main-photo.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.team-member{
+    background: rgb(233, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px black;
+    font-size: 20px;
+    margin: 50px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.team-info img{
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.team-info h2{
+    text-align: center;
+    font-size: 23px;
+}
+
+.team-member-1{
+    flex-grow: 1;
+}
+
+.team-member-2{
+    flex-grow: 2;
+}
+
+.team-member-3{
+    flex-grow: 1;
+}
+
+/* ´*************************************Photos*/
+.photos{
+    display: flex;
+    flex-direction: row;
+}
+
+.photos img{
+    width: 25%;
+}
+
+/* ´*************************************References*/
+
+.references{
+    background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
+        url(../img/main-photo.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.references article{
+    background: rgb(233, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px black;
+    font-size: 20px;
+    margin: 10px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author{
+    margin-bottom: 15px;
+}
+
+.author img{
+    border-radius: 50%;
+}
+
+.author h2{
+    font-size: 23px;
+}
+
+/* ´*************************************Photos-2 */
+.photos-2{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.photos-2 img{
+    width: 30%;
+}
+
+.img1{
+    order: 1;
+}
+
+.img2{
+    order: 0;
+}
+
+.img3{
+    order: 2;
+}
+
+/* ************************Photos-3 */
+.photos-3{
+    background: #f0efef;
+    height: 620px;             /*20px navíc kvůli paddingu, nebo se, může paddinf vymazat */
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 5px 10px 20px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border-radius: 20px; */
+}
+
+.photos-3 img{
+    width: 32%;
+    height:200px;
+}
+
+.image1{
+    align-self: flex-start;
+}
+
+.image2{
+    align-self: center;
+}
+
+.image3{
+    align-self: flex-end;
+}
+
+/* ************************************Photos-4 */
+.photos-4 {
+    background: #f5f5f5;
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px black;
+    padding-top: 20px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+   
+  .photos-4 img {
+    width: 400px;
+    height: 200px;
+  }
+
+  /* *****************************************Contact-3 */
+.contact{
+    background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
+        url(../img/main-photo.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact article{
+    width: 300px;
+    box-shadow: 0px 5px 10px black;
+    margin-left: 15px;
+}
+
+
+.contact-1{
+    flex-shrink: 0;
+}
+
+.contact-2{
+    flex-shrink: 0;
+}
+
+.contact-3{
+    flex-shrink: 0;
+}
+  
