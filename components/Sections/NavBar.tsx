@@ -1,7 +1,6 @@
 import * as React from 'react';
 //Mui
 import { MenuList, MenuListProps, Paper, PaperProps, styled } from "@mui/material"
-import HomeIconLink from '../CustomComponent/HomeIconLink';
 //components
 import FolowMeIcon from './FolowMeIcon';
 import CustomButton from '../CustomComponent/CustomButton';
@@ -34,16 +33,15 @@ const MenuListRoot = styled(MenuList)<MenuListProps>(({theme}) =>
 
 const CustomNavButton = () => {    
     const { navLinks } = React.useContext(ConstantsContext);
-    navLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
+    navLinks?.sort((a, b) => (a.id > b.id ? 1 : -1));
 
   return (
     <>
       <PaperRoot elevation={3}>     
         <MenuListRoot>
-            <HomeIconLink/>
                 {navLinks?.map((NavLink, index) => (
                     <CustomButton
-                        key={NavLink.label + index + NavLink.href}
+                        key={NavLink.id}
                         href={NavLink.href}
                         {...NavLink.buttonProps}
                     >

@@ -27,7 +27,6 @@ const PortfolioMuiFirst: React.FC<PortfolioMuiFirstProps> = (props) => {
                     <Image src="/images/logo/react.png" alt="React" width={70} height={70}></Image>               
                     <Image src="/images/logo/material_ui.png" alt="Material UI" width={70} height={70}></Image>               
                 </Box>
-                <Link href="../EfectVyskakovaci/index.html" style={{color: "black"}}>Náhled</Link>
             </Card>
         </Card>
     </>

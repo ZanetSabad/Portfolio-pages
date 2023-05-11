@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 //mui
 import { AppBar, AppBarProps, Box, BoxProps, Container, ContainerProps, IconButton, styled, Toolbar, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
-//next
-import Image, {ImageProps} from 'next/image'
 ///custom components
 import CustomDrawer from '../CustomComponent/CustomDrawer'
 import MenuIcon from '@mui/icons-material/Menu';
