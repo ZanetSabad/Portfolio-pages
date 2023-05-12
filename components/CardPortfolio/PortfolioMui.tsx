@@ -27,7 +27,7 @@ const PortfolioMui: React.FC<PortfolioMuiProps> = (props) => {
                     <Image src="/images/logo/react.png" alt="React" width={60} height={60}></Image>               
                     <Image src="/images/logo/material_ui.png" alt="Material UI" width={60} height={60}></Image>               
                 </Box>
-                <Link href="https://portfolio-one-page.vercel.app/"  target='_blank'  style={{color: "black"}}>Náhled</Link>
+                <Link href="https://zanetasabadka.vercel.app/"  target='_blank'  style={{color: "black"}}>Náhled</Link>
             </Card>
         </Card>
     </>
