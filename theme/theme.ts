@@ -53,7 +53,7 @@ const theme = createTheme ({
             lineHeight: "3rem",
             [breakpoints.down("md")]: {
                 fontSize: "1.5rem",
-                lineHeight: "2.5.8rem"
+                lineHeight: "2rem"
             }
        
         },
@@ -73,7 +73,7 @@ const theme = createTheme ({
             fontSize: "1.4rem",
             lineHeight: "2rem",
             [breakpoints.down("md")]: {
-                fontSize: "1.1rem",
+                fontSize: "1.2rem",
                 lineHeight: "1.5rem"
             }
         },
@@ -81,22 +81,21 @@ const theme = createTheme ({
             fontFamily: 'Inconsolata, monospace',
             fontSize: "1.2rem",
             lineHeight: "2rem",
-        },
         [breakpoints.down("md")]: {
-            fontSize: "0.8rem",
-            lineHeight: "1.5rem"
+            fontSize: "1rem",
+            }
         },
         body1: {
             fontFamily: 'Inconsolata, monospace',
             fontWeight: 400,
             fontSize: "1rem",
             lineHeight: "1.7rem",
-        },    
         [breakpoints.down("md")]: {
             fontSize: "0.8rem",
             lineHeight: "1.2rem"
         }
     },
+},
     breakpoints: {
         values: {
           xs: 500,
