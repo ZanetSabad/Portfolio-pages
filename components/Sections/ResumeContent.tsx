@@ -24,9 +24,13 @@ const ResumeContent: React.FC<ResumeContentProps> = (props) => {
                         <Typography variant='h4'>Kurz osobního rozvoje</Typography>
                         <Typography variant='h5' color="primary.main">Attavena, o.p.s. - 2021</Typography>
                         <Typography variant="body1">MS Excel, Canva, Zoner Photo Studio X, práce v týmu</Typography> <br/>  
+                        
                 </Grid>
+                <Certificate />
+               
                  <Grid xs={6}>
-                 <Typography variant='h2' color="secondary.main" textAlign="center">Pracovní zkušenosti</Typography><br/>
+    
+                 <Typography variant='h2' color="secondary.main" textAlign="center" sx={{borderTop: "1px solid black"}}>Pracovní zkušenosti</Typography><br/>
                         <Typography variant='h4'>Rodičovská dovolená</Typography>
                         <Typography variant='h5' color="primary.main">2014 / dosud</Typography>
                         <Typography variant="body1">
@@ -47,7 +51,7 @@ const ResumeContent: React.FC<ResumeContentProps> = (props) => {
                             Bezproblémový chod obchodu, aktivní starost o zákazníky, komunikace, 
                             delegování úkolů, práce s financemi, empatie a zpětná vazba.
                         </Typography><br/>
-                 <Typography variant='h2' color="secondary.main" textAlign="center">Vzdělání</Typography><br/>
+                 <Typography variant='h2' color="secondary.main" textAlign="center" sx={{borderTop: "1px solid black"}}>Vzdělání</Typography><br/>
                         <Typography variant='h4'>Jihočeská univerzita v Českých Budějovicích</Typography>
                         <Typography variant='h5' color="primary.main">Biologie a ochrana zájmových organismů</Typography>
                         <Typography variant="body1">
@@ -57,7 +61,6 @@ const ResumeContent: React.FC<ResumeContentProps> = (props) => {
                         <Typography variant='h4'>SOŠ veterinární, mechanizační a zahradnická a JŠ s právem státní jazykové zkoušky ČB</Typography>
                         <Typography variant='h5' color="primary.main">Veterinární prevence - 2005 / 2009</Typography>   
                 </Grid>
-                <Certificate />
             </Grid>    
         </CustomPaper>
     </>

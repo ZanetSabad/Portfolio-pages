@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, styled } from "@mui/material"
+import { Typography, styled } from "@mui/material"
+import Grid from '@mui/material/Unstable_Grid2'
 import ConstantsContext from '../context/constantsContext';
 import Link, { LinkProps } from 'next/link';
 
@@ -8,10 +9,10 @@ interface CertificateProps{}
 const LinkRoot = styled(Link)<LinkProps>(({theme})=> ({
     textDecoration: "none",
     ...theme.typography.h5,
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     margin: "0.5rem 1rem",
     "&:hover": {
-        color: theme.palette.primary.main
+        color: theme.palette.secondary.main
     }
 }))
 
@@ -21,7 +22,7 @@ const Certificate: React.FC<CertificateProps> = (props) => {
     certificates?.sort((a, b) => (a.id > b.id ? 1 : -1))
   return (
     <>
-    <Box sx={{display: "flex", flexDirection: "column", marginTop: "2rem"}}>
+    <Grid container spacing={2} columns={{ xs: 1}} margin="auto">
         {certificates?.map ((Certificate, id) => (
             <LinkRoot
                 key={Certificate.id}
@@ -33,7 +34,7 @@ const Certificate: React.FC<CertificateProps> = (props) => {
                 {Certificate.icon}
             </LinkRoot>
         ))}
-        </Box>
+        </Grid>
       
     </>
   );
